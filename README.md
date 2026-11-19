@@ -5,33 +5,28 @@ Feito por Sites com a Lari.
 
 ## Arquivos
 
-| Arquivo | O que é | Onde entra |
-|---|---|---|
-| `caricatura.css` | CSS do rodapé, da busca e da assinatura | carregado pelo campo de HTML do rodapé |
-| `caricatura.js` | Os 11 scripts da loja (rodapé, busca, menu etc.) | carregado pelo campo de HTML do rodapé |
-| `painel/caricatura-painel.css` | CSS do campo "CSS personalizado" do painel | colar no campo de CSS do painel |
-| `colar-no-painel/caricatura-rodape.html` | Mesmo conteúdo de `caricatura.css` + `caricatura.js` num arquivo só | alternativa: colar direto no campo de HTML do rodapé |
-| `original/` | Backup do que estava no ar em 19/11/2026, antes desta versão | não usar, só para voltar atrás |
-| `build/` | Fontes e script que geram os arquivos acima (`python3 build.py`) | manutenção |
+| Arquivo | O que é |
+|---|---|
+| `caricatura.css` | Todo o CSS da loja: o que ficava no campo de CSS do painel + rodapé, busca e assinatura |
+| `caricatura.js` | Os 11 scripts da loja (rodapé, busca, menu etc.) |
+| `original/` | Backup do que estava no ar em 19/11/2026, antes desta versão |
+| `painel/` e `colar-no-painel/` | Plano B: o mesmo código para colar direto nos campos do painel, sem GitHub |
+| `build/` | Fontes e script que geram os arquivos acima (`python3 build/build.py`) |
 
 ## Como colocar no ar
 
-Duas formas. Use uma só.
-
-**A. Colando tudo no painel** (versão testada no rascunho)
-1. Campo de CSS do painel: conteúdo de `painel/caricatura-painel.css`.
-2. Campo de HTML do rodapé: conteúdo de `colar-no-painel/caricatura-rodape.html`.
-
-**B. Carregando do GitHub** (campo do rodapé fica com 2 linhas)
-1. Campo de CSS do painel: conteúdo de `painel/caricatura-painel.css`.
-2. Campo de HTML do rodapé, trocando `COMMIT` pelo código do commit:
+Campo de HTML do rodapé, só estas duas linhas, trocando `COMMIT` pelo código do commit:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/agenciaraliss/caricatura@COMMIT/caricatura.css">
 <script src="https://cdn.jsdelivr.net/gh/agenciaraliss/caricatura@COMMIT/caricatura.js"></script>
 ```
 
-O `<script>` tem que ficar assim, sem `async` e sem `defer`. Depois de trocar, conferir no rascunho antes de publicar.
+Campo de CSS do painel: vazio. O CSS que ficava lá agora está dentro de `caricatura.css`.
+
+O `<script>` tem que ficar assim, sem `async` e sem `defer`. Conferir no rascunho antes de publicar.
+
+Para voltar atrás: colar de novo o conteúdo de `original/` nos dois campos.
 
 ## O que o cliente muda sozinho no painel
 
@@ -53,4 +48,5 @@ O `<script>` tem que ficar assim, sem `async` e sem `defer`. Depois de trocar, c
 - Sem `MutationObserver` nem `setInterval` sem fim, sem `form.submit()`.
 - JavaScript em ES5, dentro de `DOMContentLoaded`.
 - Não editar arquivos `.tpl` do tema.
-- O campo de CSS do painel apaga algumas propriedades (`aspect-ratio`, `scroll-snap`, variáveis). Por isso o CSS da busca fica em `caricatura.css`, e não no painel.
+- Em `caricatura.css` os `@import` de fonte ficam sempre nas primeiras linhas, senão o navegador ignora.
+- O campo de CSS do painel apaga algumas propriedades (`aspect-ratio`, `scroll-snap`, variáveis); pelo arquivo do GitHub isso não acontece.
