@@ -15,16 +15,21 @@ Feito por Sites com a Lari.
 
 ## Como colocar no ar
 
-Campo de HTML do rodapé, só estas duas linhas, trocando `COMMIT` pelo código do commit:
+Trocar `COMMIT` pelo código do commit.
+
+Campo de CSS do painel:
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/agenciaraliss/caricatura@COMMIT/caricatura.css");
+```
+
+Campo de HTML do rodapé:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/agenciaraliss/caricatura@COMMIT/caricatura.css">
 <script src="https://cdn.jsdelivr.net/gh/agenciaraliss/caricatura@COMMIT/caricatura.js"></script>
 ```
 
-Campo de CSS do painel: vazio. O CSS que ficava lá agora está dentro de `caricatura.css`.
-
-O `<script>` tem que ficar assim, sem `async` e sem `defer`. Conferir no rascunho antes de publicar.
+No `<script>` pode usar `defer`, mas nunca `async`. Conferir no rascunho antes de publicar.
 
 Para voltar atrás: colar de novo o conteúdo de `original/` nos dois campos.
 
