@@ -113,10 +113,16 @@ for d in ['painel', 'colar-no-painel']:
     (ROOT / d).mkdir(exist_ok=True)
 (ROOT / 'colar-no-painel' / 'caricatura-rodape.html').write_text(out, encoding='utf-8')
 (ROOT / 'painel' / 'caricatura-painel.css').write_text(css_new, encoding='utf-8')
-(ROOT / 'caricatura.css').write_text('/* Caricatura | layout por Sites com a Lari */\n' + styles[0].strip() + '\n', encoding='utf-8')
+# caricatura.css = CSS do painel + CSS do rodape num arquivo so; os @import sobem para o topo (senao o navegador ignora)
+IMP = r'@import\s+url\([^)]*\)\s*;'
+imports = re.findall(IMP, css_new) + re.findall(IMP, styles[0])
+assert len(imports) == 2, imports
+corpo_painel = re.sub(IMP, '', css_new).strip()
+corpo_rodape = re.sub(IMP, '', styles[0]).strip()
+assert '@import' not in corpo_painel + corpo_rodape
+(ROOT / 'caricatura.css').write_text('/* Caricatura | layout por Sites com a Lari */\n' + '\n'.join(imports) + '\n\n/* ===== LOJA (antes ficava no campo de CSS do painel) ===== */\n' + corpo_painel + '\n\n/* ===== RODAPE, BUSCA E ASSINATURA ===== */\n' + corpo_rodape + '\n', encoding='utf-8')
 (ROOT / 'caricatura.js').write_text('/* Caricatura | layout por Sites com a Lari */\n' + '\n'.join(';' + s.strip() + '\n' for s in scripts), encoding='utf-8')
 import json, gzip, base64, hashlib
 bundle = json.dumps({'css': extra_css.replace(logo, '__LOGO__'), 's1': scripts[0], 's2': scripts[1]}, ensure_ascii=False).encode('utf-8')
 b64 = base64.b64encode(gzip.compress(bundle, 9)).decode()
-(B / 'test_bundle.b64').write_text(b64)
 print('ok', len(src), '->', len(out), '| css rodape', len(styles[0]), '| js', sum(map(len, scripts)), '| bundle', len(bundle), 'b64', len(b64), hashlib.sha256(bundle).hexdigest()[:16])
