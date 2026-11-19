@@ -262,10 +262,9 @@ function pickVitrine(menu){for(var i=0;i<menu.length;i++){if(/novidade|lan[cç]a
 function pathOf(href){try{var u=new URL(href,window.location.origin);return u.pathname}catch(e){return href}}
 var vitCache=null,vitLoading=false,vitWaiters=[];
 function loadVitrine(url,cb){if(vitCache){cb(vitCache);return}
-try{var c=JSON.parse(sessionStorage.getItem('cariVitrine')||'null');if(c&&c.u===url&&c.p&&c.p.length){vitCache=c.p;cb(vitCache);return}}catch(e){}
 vitWaiters.push(cb);if(vitLoading)return;vitLoading=true;
-function done(list){vitCache=list;vitLoading=false;try{if(list.length)sessionStorage.setItem('cariVitrine',JSON.stringify({u:url,p:list}))}catch(e){}var w=vitWaiters;vitWaiters=[];for(var i=0;i<w.length;i++){w[i](list)}}
-fetch(url,{credentials:'same-origin'}).then(function(r){return r.ok?r.text():''}).then(function(html){var out=[];if(!html){done(out);return}var doc=new DOMParser().parseFromString(html,'text/html');var cards=doc.querySelectorAll('.js-item-product');
+function done(list){vitCache=list;vitLoading=false;var w=vitWaiters;vitWaiters=[];for(var i=0;i<w.length;i++){w[i](list)}}
+fetch(url,{credentials:'same-origin',cache:'no-cache'}).then(function(r){return r.ok?r.text():''}).then(function(html){var out=[];if(!html){done(out);return}var doc=new DOMParser().parseFromString(html,'text/html');var cards=doc.querySelectorAll('.js-item-product');
 for(var i=0;i<cards.length&&out.length<8;i++){var c=cards[i];if(/esgotado|sem estoque/i.test(c.textContent||''))continue;var a=c.querySelector('a.item-link, a[href*="/produtos/"]'),img=c.querySelector('img'),nm=c.querySelector('.js-item-name'),pr=c.querySelector('.js-price-display');if(!a||!img||!nm)continue;
 var parts=(img.getAttribute('data-srcset')||img.getAttribute('srcset')||'').split(','),best='',bestW=0,last='';for(var k=0;k<parts.length;k++){var p=parts[k].trim().split(/\s+/);if(!p[0])continue;var w=parseInt(p[1],10)||0;last=p[0];if(w>=480&&(!bestW||w<bestW)){best=p[0];bestW=w}}
 var src=best||last||img.getAttribute('data-src')||img.getAttribute('src')||'';if(!src||src.indexOf('data:')===0)continue;var link=a.getAttribute('href'),dup=false;for(var d=0;d<out.length;d++){if(out[d].l===link)dup=true}if(dup||!link)continue;
