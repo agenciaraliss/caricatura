@@ -1,0 +1,195 @@
+/* Caricatura | layout por Sites com a Lari */
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+.js-footer.footer-colors > .container.py-3,.js-footer.footer-colors > .divider,.js-footer.footer-colors > .container,.js-footer.footer-colors > .footer-legal{display:none !important}
+.js-footer.footer-colors > .newsletter-footer{position:absolute !important;left:-9999px !important;top:-9999px !important;width:1px !important;height:1px !important;overflow:hidden !important;pointer-events:none !important}
+.js-footer.footer-colors{background:#fff !important;color:#000 !important;padding:0 !important;border:none !important;position:relative !important}
+#cari-footer{font-family:'Helvetica Neue','Inter','Avenir Next',-apple-system,BlinkMacSystemFont,sans-serif;color:#000;background:#fff;width:100%;-webkit-font-smoothing:antialiased}
+#cari-footer *{box-sizing:border-box}
+#cari-footer a{color:#000;text-decoration:none}
+#cari-footer a:hover{text-decoration:underline;text-underline-offset:4px}
+.cari-newsletter{max-width:1100px;margin:0 auto;padding:90px 30px 50px;text-align:center}
+.cari-newsletter-cursive{font-family:'Allura',cursive;font-size:36px;font-weight:400;color:#000;margin:0 0 30px 0;letter-spacing:0.02em;line-height:1}
+.cari-newsletter-subtitle{font-size:13px;color:#000;margin:0 0 40px 0;letter-spacing:0.18em;text-transform:uppercase;font-weight:300}
+.cari-newsletter-form{display:flex;align-items:flex-end;gap:60px;max-width:1000px;margin:0 auto}
+.cari-newsletter-input{flex:1;border:none;border-bottom:1px solid #d0d0d0;padding:14px 4px;font-size:13px;background:transparent;outline:none;color:#000;font-family:inherit;letter-spacing:0.16em;border-radius:0;font-weight:300;text-align:center}
+.cari-newsletter-input::placeholder{color:#999;letter-spacing:0.16em;font-weight:300}
+.cari-newsletter-input:focus{border-bottom-color:#000}
+.cari-newsletter-btn{background:#000;color:#fff;border:1px solid #000;padding:14px 50px;font-size:11px;letter-spacing:0.32em;text-transform:uppercase;cursor:pointer;font-weight:400;font-family:inherit;align-self:flex-end;transition:background 0.2s,color 0.2s}
+.cari-newsletter-btn:hover{background:#fff;color:#000}
+.cari-newsletter-btn:disabled{opacity:0.5;cursor:not-allowed}
+.cari-newsletter-feedback{margin-top:24px;font-size:12px;letter-spacing:0.1em;min-height:20px;font-weight:300}
+.cari-newsletter-feedback.success{color:#2a8a3e}
+.cari-newsletter-feedback.error{color:#c00}
+.cari-social{display:flex;justify-content:center;gap:36px;padding:40px 0 80px}
+#cari-footer.no-newsletter .cari-social{padding:60px 0 60px}
+.cari-social a{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:#000;transition:opacity 0.2s}
+.cari-social a:hover{opacity:0.6;text-decoration:none}
+.cari-social svg{width:22px;height:22px;fill:none;stroke:#000;stroke-width:1.5}
+.cari-cols{max-width:1400px;margin:0 auto;padding:30px 60px 80px;display:grid;grid-template-columns:repeat(4,1fr);gap:60px}
+.cari-col h4{font-size:12px;font-weight:400;letter-spacing:0.32em;text-transform:uppercase;margin:0 0 32px 0;color:#000}
+.cari-col ul{list-style:none;padding:0;margin:0}
+.cari-col li{margin-bottom:16px}
+.cari-col a{font-size:12px;text-transform:uppercase;letter-spacing:0.18em;color:#000;font-weight:300;line-height:1.5}
+.cari-col-atendimento li{display:flex;align-items:center;gap:10px;font-size:12px;text-transform:uppercase;letter-spacing:0.18em;color:#000;font-weight:300;line-height:1.5}
+.cari-col-atendimento li a{display:flex;align-items:center;gap:10px}
+.cari-col-atendimento svg{width:14px;height:14px;flex-shrink:0;stroke:#000;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.cari-logo-footer{display:flex;justify-content:center;align-items:center;padding:20px 60px 50px;max-width:1500px;margin:0 auto}
+.cari-logo-footer img{height:70px;width:auto;display:block;opacity:0.9}
+.cari-legal{border-top:1px solid #ececec;padding:30px 60px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;max-width:1500px;margin:0 auto}
+.cari-legal-text{font-size:11px;color:#888;letter-spacing:0.06em;line-height:1.7;font-weight:300}
+.cari-legal-text a{color:#888}
+.cari-legal-text a:hover{color:#000}
+.cari-legal-payments{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.cari-legal-payments img{height:20px;width:auto;filter:grayscale(1) opacity(0.7)}
+@media(max-width:767px){
+.cari-newsletter{padding:60px 24px 30px}
+.cari-newsletter-cursive{font-size:26px}
+.cari-newsletter-subtitle{font-size:11px}
+.cari-newsletter-form{flex-direction:column;gap:28px;align-items:stretch}
+.cari-newsletter-input{text-align:left}
+.cari-newsletter-btn{width:100%;padding:16px}
+.cari-social{gap:28px;padding:30px 0 50px}
+.cari-cols{grid-template-columns:1fr 1fr;gap:40px 24px;padding:20px 24px 50px}
+.cari-col h4{font-size:11px;margin-bottom:24px}
+.cari-col a{font-size:11px}
+.cari-col-atendimento li{font-size:11px}
+.cari-logo-footer{padding:10px 24px 30px}
+.cari-logo-footer img{height:56px}
+.cari-legal{flex-direction:column;align-items:flex-start;text-align:left;padding:24px}
+}
+#cari-historia{font-family:'Helvetica Neue','Inter','Avenir Next',-apple-system,BlinkMacSystemFont,sans-serif;background:#fff;width:100%;padding:80px 0;-webkit-font-smoothing:antialiased}
+.cari-historia-container{max-width:1400px;margin:0 auto;padding:0 60px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.cari-historia-text{display:flex;flex-direction:column;justify-content:center}
+.cari-historia-title{font-size:28px;font-weight:400;color:#000;margin:0 0 32px 0;letter-spacing:0.04em;line-height:1.2}
+.cari-historia-title strong{font-weight:700}
+.cari-historia-paragraph{font-size:14px;font-weight:300;color:#333;line-height:1.8;letter-spacing:0.01em;margin:0 0 28px 0;max-width:520px}
+.cari-historia-btn{display:inline-block;background:#000;color:#fff;padding:14px 40px;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:400;text-decoration:none;border:1px solid #000;align-self:flex-start;transition:background 0.2s,color 0.2s}
+.cari-historia-btn:hover{background:#fff;color:#000;text-decoration:none}
+.cari-historia-image{width:100%;height:auto;display:block;filter:grayscale(1);transition:filter 0.4s}
+.cari-historia-image:hover{filter:grayscale(0)}
+@media(max-width:767px){
+#cari-historia{padding:50px 0}
+.cari-historia-container{grid-template-columns:1fr;gap:32px;padding:0 24px}
+.cari-historia-image-wrapper{order:-1}
+.cari-historia-title{font-size:22px;margin-bottom:20px}
+.cari-historia-paragraph{font-size:13px;line-height:1.7}
+.cari-historia-btn{width:100%;text-align:center;padding:16px}
+}
+.head-logo-row svg,.head-logo-row svg *,.cari-mobile-account svg,.cari-mobile-account svg *,.cari-mobile-lupa svg,.cari-mobile-lupa svg *{fill:none !important;stroke:#000 !important;stroke-width:1.1 !important;stroke-linecap:round !important;stroke-linejoin:round !important}
+.head-logo-row .utilities-icon,.cari-mobile-account svg,.cari-mobile-lupa svg{width:22px !important;height:22px !important}
+.head-logo-row .badge{font-size:10px !important;font-weight:400 !important;background:#000 !important;color:#fff !important;min-width:16px !important;width:16px !important;height:16px !important;line-height:16px !important;padding:0 !important;border-radius:50% !important;text-align:center !important;position:absolute !important;top:-2px !important;right:-6px !important;letter-spacing:0 !important}
+.head-logo-row .badge,.head-logo-row .badge *{background:#000 !important;color:#fff !important}
+.head-logo-row .btn-utility:hover{opacity:0.55 !important;transition:opacity 0.2s !important}
+.cari-mobile-lupa{padding:4px !important;margin-left:0 !important;margin-top:-12px !important}
+.js-adbar .adbar-message{font-size:12px !important;letter-spacing:0.14em !important;text-transform:uppercase !important;font-weight:400 !important;display:inline-flex !important;align-items:center !important;gap:18px !important;flex-wrap:wrap !important;justify-content:center !important;line-height:1.4 !important}
+.cari-adbar-cupom{display:inline-flex;align-items:center;gap:10px;padding-left:0;border-left:none}
+.cari-adbar-cupom-label{font-weight:400;letter-spacing:0.14em;opacity:0.85}
+.cari-adbar-cupom-code{font-weight:700;letter-spacing:0.18em}
+.cari-adbar-copy-btn{background:none;border:0;padding:4px;cursor:pointer;color:inherit;display:inline-flex;align-items:center;justify-content:center;transition:opacity 0.2s;margin:0;line-height:0}
+.cari-adbar-copy-btn:hover{opacity:0.6}
+.cari-adbar-copy-btn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;display:block}
+.cari-adbar-copied-msg{position:fixed;background:#1a1a1a;color:#fff;padding:6px 12px;font-size:10px;letter-spacing:0.14em;border-radius:2px;pointer-events:none;opacity:0;transition:opacity 0.2s;text-transform:uppercase;font-weight:500;z-index:99999;white-space:nowrap}
+.cari-adbar-copied-msg.show{opacity:1}
+@media(max-width:767px){
+.js-adbar .adbar-message{flex-wrap:nowrap !important;white-space:nowrap !important;font-size:9px !important;letter-spacing:0.1em !important;gap:8px !important}
+.cari-adbar-cupom{gap:5px !important}
+.cari-adbar-copy-btn svg{width:11px !important;height:11px !important}
+}
+.js-adbar.section-adbar{order:-1 !important}
+body,.container-fluid,main{display:flex !important;flex-direction:column !important}
+.cari-marquee-new{overflow:hidden;width:100%;padding:22px 0;background:#fff;border-top:none;border-bottom:none}
+.cari-marquee-new-track{display:flex;gap:70px;align-items:center;animation:cariM 35s linear infinite;width:max-content}
+.cari-marquee-new:hover .cari-marquee-new-track{animation-play-state:paused}
+.cari-marquee-new-item{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#1a1a1a;white-space:nowrap;font-weight:500;flex-shrink:0}
+.cari-marquee-new-item svg{width:24px;height:24px;stroke:#1a1a1a;fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+@keyframes cariM{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:767px){
+.cari-marquee-new{padding:14px 0}
+.cari-marquee-new-track{gap:40px;animation-duration:22s}
+.cari-marquee-new-item{font-size:10px;gap:10px;letter-spacing:0.12em}
+.cari-marquee-new-item svg{width:18px;height:18px;stroke-width:1.3}
+}
+.section-informative-banners{display:none !important}
+.js-products-featured-title,.js-products-new-title,.js-products-best-seller-title,.js-products-related-title,.js-products-also-bought-title,.section-title{font-size:16px !important;letter-spacing:0.32em !important;text-transform:uppercase !important;font-weight:400 !important;color:#1a1a1a !important;text-align:center !important;margin-top:60px !important;margin-bottom:40px !important;line-height:1.4 !important;font-family:inherit !important;padding-left:0.32em !important}
+@media(max-width:767px){
+.js-products-featured-title,.js-products-new-title,.js-products-best-seller-title,.js-products-related-title,.js-products-also-bought-title,.section-title{font-size:14px !important;letter-spacing:0.28em !important;margin-top:40px !important;margin-bottom:28px !important}
+}
+.js-item-name.item-name,.js-item-name.product-item-name{font-size:11px !important;letter-spacing:0.18em !important;text-transform:uppercase !important;font-weight:400 !important;color:#1a1a1a !important;opacity:1 !important;margin-top:14px !important;margin-bottom:6px !important;line-height:1.4 !important}
+.js-price-display.item-price,.js-price-display.product-item-price,.product-item-price,.item-price{font-size:12px !important;letter-spacing:0.12em !important;font-weight:700 !important;color:#1a1a1a !important}
+.item-link{display:block !important;color:inherit !important;text-decoration:none !important}
+.item-link:hover{text-decoration:none !important}
+.js-item-product,.item-product,.js-product-slide,.product-item{position:relative !important;overflow:hidden !important}
+.js-product-slide-link,.product-item-image-wrapper,.js-item-product,.item-product,.product-item,.js-product-slide{position:relative !important}
+.js-product-slide-link,.product-item-image-wrapper{overflow:hidden !important;display:block !important}
+.js-product-slide-img,.product-item-image{transition:transform 0.6s ease !important}
+@media(min-width:768px){
+.js-item-product:hover .js-product-slide-img,.item-product:hover .js-product-slide-img,.product-item:hover .product-item-image{transform:scale(1.04) !important}
+}
+.label.js-free-shipping-label,.label-free-shipping{background:transparent !important;color:#1a1a1a !important;font-size:9px !important;letter-spacing:0.18em !important;font-weight:500 !important;text-transform:uppercase !important;padding:6px 0 !important;border:none !important;border-radius:0 !important}
+.js-insta-variant.btn-variant{border:1px solid #e0e0e0 !important;background:#fff !important;color:#1a1a1a !important;font-size:10px !important;letter-spacing:0.1em !important;font-weight:400 !important;padding:6px 10px !important;border-radius:0 !important;text-transform:uppercase !important;min-width:40px !important;transition:all 0.2s !important}
+.js-insta-variant.btn-variant:hover,.js-insta-variant.btn-variant.selected{background:#1a1a1a !important;color:#fff !important;border-color:#1a1a1a !important}
+.js-insta-variant.btn-variant.btn-variant-no-stock{opacity:0.4 !important;text-decoration:line-through !important}
+.item-link,.product-item{box-shadow:none !important}
+#cari-footer .cari-col-atendimento li a{display:flex !important;align-items:center !important;gap:10px !important;max-width:100% !important;white-space:normal !important;word-break:normal !important}
+#cari-footer .cari-col-atendimento li span{overflow-wrap:anywhere;min-width:0}
+#cari-footer .cari-legal{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px}
+#cari-footer .cari-legal-text{grid-column:1}
+#cari-footer .cari-seals{grid-column:2;display:flex;align-items:center;justify-content:center;gap:18px}
+#cari-footer .cari-seals a{display:block;line-height:0}
+#cari-footer .cari-seals img{height:34px;width:auto;display:block;filter:grayscale(1);opacity:.75;transition:filter .3s,opacity .3s}
+#cari-footer .cari-seals a:hover img{filter:none;opacity:1}
+#cari-footer .cari-legal-payments{grid-column:3;justify-content:flex-end}
+#cari-footer .cari-by{display:flex;justify-content:center;padding:4px 24px 26px}
+#cari-footer #lari-wm{display:inline-flex;align-items:center;gap:8px;color:#999;opacity:.75;transition:opacity .3s;font:400 9px/1 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.26em;text-transform:uppercase;text-decoration:none}
+#cari-footer #lari-wm:hover{opacity:1;text-decoration:none}
+#cari-footer #lari-wm .lw{display:block;width:34px;height:28px;opacity:.6;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 276'%3E%3Cpath fill='%232b2b2b' d='M115 270l0-7l4 0c4 0 7 2 5 5c0 1 0 3 0 5c0 2 0 3 0 3c0 0-1-1-1-2c-1-4-6-4-6-1c0 2 0 3-1 3c-1 0-1-3-1-6zM135 275c0-3 4-11 5-11c1 0 2 2 4 6c1 3 2 6 1 6c-1 0-1-1-2-2c0-2-6-3-6-1c0 1 0 2-1 3c-1 0-1 0-1-1zM156 270c0-4 0-7 1-7c1 0 1 2 1 5c0 6 0 6 3 6c2 0 3 0 3 1c0 1-2 1-4 1l-4 0l0-6zM174 274c-1-2-1-10 0-10c1-1 1 1 1 5c0 7 0 8-1 5zM187 275c-1-1-2-2-2-3c0-1 0-1 2 0c2 2 5 2 6 0c0 0-1-1-3-2c-4-1-5-3-4-5c2-3 7-2 8 1c0 1 0 1-2 0c-2-2-2-2-4-1c-1 2 1 4 5 4c0 0 1 1 2 2c1 4-4 6-8 4zM205 275c0-1-1-2-1-3c0-1 0-1 1 0c2 2 6 3 6 1c0-1-1-2-3-3c-2 0-3-2-4-2c-1-4 5-7 8-3c2 2 0 3-1 1c-2-2-5-2-5 0c0 1 1 2 3 3c4 1 5 3 3 6c-2 1-5 1-7 0zM141 270c1 0 0-1 0-2c-1-1-3 0-3 2c0 1 3 1 3 0zM122 267c0-1-1-2-2-2c-2 0-3 0-3 2c0 2 1 2 3 2c1 0 2-1 2-2zM159 255c-1-1-2-2-2-3c0-2-8-3-13-2c-6 2-6 1 0-6c3-5 4-7 4-10c0-6 11-23 15-23c5 0 14 13 15 22c1 5 2 8 5 12c5 6 5 8-1 5c-5-2-13 0-13 3c0 3-7 5-10 2zM166 254c0-1-1-1-3-1c-3 0-3 0-2 1c2 1 4 1 5 0zM170 249l6-2l0-8c0-11-7-25-13-25c-5 0-13 15-13 25l0 8l6 2c7 2 6 2 14 0zM148 244c0-1 0-1-2 0c-1 1-2 3-2 3c0 1 1 1 2 0c1-1 2-2 2-3zM181 245c-1-1-2-2-2-1c-1 1 2 4 3 4c0-1 0-2-1-3zM160 239c-4-3-4-6-1-9c4-4 10-1 10 4c0 6-5 8-9 5zM166 237c2-2 1-5-1-6c-2-1-5 0-6 2c-1 4 4 7 7 4zM56 205c-55-6-74-42-36-69c12-8 12-8 0 1c-21 17-24 35-8 50c22 19 65 22 119 8c19-5 19-5 17-4c-2 1-25 7-36 10c-19 4-41 5-56 4zM248 198c-13-3-20-9-34-25c-9-12-13-15-19-18c-7-4-7-4-7 16l0 19l-4 0c-3 0-4 0-7-6l-3-6l0-34c0-33-1-34-3-37l-2-3l23 0c31 0 41 2 48 11c13 15-1 32-28 36l-6 1l4 2c7 2 14 8 21 17c15 19 27 27 42 27c4 0 4 0 1 1c-5 1-20 1-26-1zM38 149c0-23-1-42-1-43c-1-2 0-2 8-2l10 0l0 42l0 41l6 0c13 0 25-4 35-12l6-5l-4 9c-2 5-4 9-4 10c0 1-6 1-28 1l-28 0l0-41zM159 184c-2-4-5-8-6-11c-7-14-37-15-55-2l-5 4l6-12c3-6 12-22 18-35c7-13 12-23 13-23c0-1 47 83 47 84c0 1-3 1-7 1l-8 0l-3-6zM255 166l0-24l-2 1l-3 1l3-2c2-1 2-2 2-20l0-18l7 0l8 0l0 14l0 14l11-7c55-38 61-73 13-81c-5-1-6-2-4-2c15 0 33 9 37 20c6 18-9 41-44 63l-13 9l0 28l0 28l-8 0l-7 0l0-24zM106 163c8-5 28-8 36-5c2 0 3 1 3 0c-1-3-20-36-20-36c0 0-2 3-4 7c-2 3-7 13-11 21c-8 15-9 16-4 13zM208 149c12-3 19-11 19-21c0-14-8-20-27-21l-11 0l0 22l0 23l7-1c4 0 9-1 12-2zM246 147c0-1 1-1 2-2c1-1 2-1 2-1c0 1-1 1-2 2c-1 1-2 1-2 1zM275 98c-3-22-12-31-31-34l-6-1l8-1c18-3 26-12 29-33c1-4 1-8 1-8c1 0 1 3 1 7c2 21 11 31 31 35l4 0l-5 1c-20 3-28 13-31 37c0 1-1 0-1-3zM55 97c-19-5-19-33 0-38c8-2 17 1 21 6c2 5 0 5-3 1c-12-12-31-3-30 14c2 15 19 20 30 10c4-4 5-3 2 1c-4 5-13 8-20 6zM101 96c-8-3-13-14-11-22c5-23 39-20 39 4c0 14-15 23-28 18zM143 96c-1-1 0-37 1-38c0 0 5 6 10 13c4 7 9 13 9 13c0 0 3-4 7-9c15-21 14-22 14 3c0 16 0 19-1 19c-2 0-2-3-2-17l-1-16l-8 12c-4 7-9 12-9 12c0 0-4-6-9-13l-9-12l0 17c0 15-1 19-2 16zM203 96c0-1 19-36 20-37c0 0 18 33 20 37c1 4-3 0-5-4l-2-5l-13 0l-13 0l-2 5c-3 4-5 7-5 4zM119 92c12-9 9-27-5-31c-21-6-31 25-11 33c3 2 13 0 16-2zM229 74c-3-5-6-10-6-10c0-1-3 4-6 10l-5 10l11 0l11 0l-5-10zM50 47c-3-1-7-5-9-8c-2-4 1-4 3 0c5 9 25 9 28 0c3-7-1-11-13-13c-17-4-22-12-13-21c8-8 28-5 28 4c0 3-1 2-3 0c-4-8-21-8-25-1c-4 7 1 12 12 15c16 3 21 9 16 18c-3 6-16 9-24 6zM96 47c-1-1-1-47 0-47c0 0 1 1 1 1c1 3-1 47-1 46zM131 26l0-23l-10 0c-8 0-10 0-10-1c0-2 3-2 22-2c17 0 22 0 22 1c-1 1-4 2-11 2l-11 0l0 23c0 14 0 22-1 22c-1 0-1-8-1-22zM167 47c-1 0-1-11-1-24l0-23l16 0c14 0 16 0 16 2c0 1-2 1-15 1l-15 0l0 10l0 9l14 1c7 0 13 0 13 1c0 1-6 1-13 1l-14 1l0 9l0 10l15 0c12 0 15 0 15 1c-1 2-30 3-31 1zM218 47c-3-2-6-6-7-9c-1-3 1-3 3 1c4 9 23 9 27 0c3-7-1-11-13-13c-13-4-16-6-16-14c0-13 23-17 30-5c2 4 0 5-3 1c-6-7-17-7-22-1c-7 7-2 13 11 16c12 2 16 6 16 13c0 9-14 16-26 11z'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .4s}
+#cari-footer #lari-wm:hover .lw{transform:translateY(-2px) rotate(-3deg)}
+@media(max-width:767px){
+#cari-footer .cari-legal{grid-template-columns:1fr;justify-items:center;text-align:center;gap:22px;padding:28px 24px 22px}
+#cari-footer .cari-legal-text,#cari-footer .cari-seals,#cari-footer .cari-legal-payments{grid-column:1}
+#cari-footer .cari-legal-text{text-align:center}
+#cari-footer .cari-legal-payments{justify-content:center}
+#cari-footer .cari-by{padding:0 24px 30px}
+#cari-footer .cari-col-atendimento li a[href^="mailto:"] span{text-transform:none !important;letter-spacing:.03em !important}
+}
+.cari-pc{display:block;text-decoration:none !important;color:#1a1a1a !important}
+.cari-pc-img{display:block;aspect-ratio:2/3;background:#f3f3f3;overflow:hidden}
+.cari-pc-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.cari-pc:hover .cari-pc-img img{transform:scale(1.04)}
+.cari-pc-name{display:block;margin-top:10px;font-size:10px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;line-height:1.45;color:#1a1a1a}
+.cari-pc-price{display:block;margin-top:4px;font-size:11px;font-weight:700;letter-spacing:.08em;color:#1a1a1a}
+.cari-sk{background:#f3f3f3;width:70%}
+.cari-search-panel{padding:40px 0 44px !important}
+.cari-search-inner.cari-s2{display:grid !important;grid-template-columns:280px 1fr !important;gap:0 60px !important;max-width:1110px;margin:0 auto;padding:0 20px;box-sizing:content-box}
+.cari-s2 h4{font-size:10px !important;font-weight:400 !important;letter-spacing:.3em !important;text-transform:uppercase;color:#999 !important;margin:0 0 22px !important}
+.cari-s2-main,.cari-s2-subs{list-style:none;margin:0;padding:0}
+.cari-s2-main li{margin:0 0 16px}
+.cari-s2-main a{font-size:17px;font-weight:300;letter-spacing:.16em;text-transform:uppercase;color:#1a1a1a;text-decoration:none;display:inline-block;line-height:1.2;white-space:nowrap;transition:opacity .2s,transform .25s}
+.cari-s2-main a:hover{opacity:.55;transform:translateX(6px)}
+.cari-s2-top{display:flex;align-items:baseline;justify-content:space-between}
+.cari-s2-top a{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#1a1a1a;text-decoration:underline;text-underline-offset:4px}
+.cari-s2-top a:hover{opacity:.55}
+.cari-s2-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.cari-s2-row{grid-column:1/-1;display:flex;align-items:baseline;gap:26px;margin-top:34px;padding-top:24px;border-top:1px solid #ececec}
+.cari-s2-row h4{margin:0 !important;flex:0 0 auto}
+.cari-s2-subs{display:flex;flex-wrap:wrap;gap:12px 20px}
+.cari-s2-subs a{font-size:11px;font-weight:300;letter-spacing:.13em;text-transform:uppercase;color:#1a1a1a;text-decoration:none;white-space:nowrap}
+.cari-s2-subs a:hover{text-decoration:underline;text-underline-offset:4px}
+.cari-mobile-search{padding:0 !important}
+.cari-mobile-search .cari-mobile-search-header{position:sticky;top:0;background:#fff;z-index:2;margin:0 !important;padding:14px 20px !important;border-bottom:1px solid #ececec !important}
+.cari-mobile-search .cari-mobile-search-input{height:44px !important;border:1px solid #1a1a1a !important;font-size:16px !important;letter-spacing:.04em;padding:0 14px !important}
+.cari-mobile-search .cari-mobile-search-close{font-size:11px !important;letter-spacing:.16em;text-transform:uppercase;color:#1a1a1a !important;padding:4px 0 4px 6px !important}
+.cari-mobile-search h4.cari-ms-h{font-size:10px !important;font-weight:400 !important;letter-spacing:.3em !important;color:#999 !important;margin:0 !important;padding:26px 20px 12px !important}
+.cari-ms-top{display:flex;align-items:baseline;justify-content:space-between;padding-right:20px}
+.cari-ms-top a{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#1a1a1a !important;text-decoration:underline !important;text-underline-offset:4px}
+.cari-ms-nov{display:flex;gap:10px;overflow-x:auto;padding:0 20px 6px;scroll-snap-type:x mandatory;scroll-padding-left:20px;scrollbar-width:none}
+.cari-ms-nov::-webkit-scrollbar{display:none}
+.cari-ms-nov .cari-pc{flex:0 0 calc(50% - 5px);scroll-snap-align:start}
+.cari-mobile-search .cari-ms-main,.cari-mobile-search .cari-ms-subs{list-style:none;margin:0;padding:0}
+.cari-mobile-search .cari-ms-main{border-top:1px solid #efefef}
+.cari-mobile-search .cari-ms-main li{padding:0 !important;border-bottom:1px solid #efefef !important}
+.cari-mobile-search .cari-ms-main a{display:flex !important;align-items:center;justify-content:space-between;padding:18px 20px !important;font-size:13px !important;font-weight:300;letter-spacing:.22em !important;text-transform:uppercase;color:#1a1a1a !important;text-decoration:none}
+.cari-mobile-search .cari-ms-main a::after{content:"";width:6px;height:6px;border-right:1px solid #bbb;border-top:1px solid #bbb;transform:rotate(45deg);flex-shrink:0;margin-right:4px}
+.cari-mobile-search .cari-ms-subs{display:flex !important;flex-wrap:wrap;gap:8px !important;padding:0 20px 32px !important}
+.cari-mobile-search .cari-ms-subs li{padding:0 !important;border:0 !important}
+.cari-mobile-search .cari-ms-subs a{display:block;padding:10px 14px !important;border:1px solid #e0e0e0;font-size:10px !important;letter-spacing:.14em !important;text-transform:uppercase;color:#1a1a1a !important;white-space:nowrap;text-decoration:none}
